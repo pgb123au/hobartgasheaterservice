@@ -1,0 +1,109 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does the TasWater meter shutoff look like?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most modern installations are a quarter-turn ball valve with a yellow or red lever handle, sitting in a concrete pit just before the meter dial. Older installations may have a square-headed gate valve that needs a meter key — a small square socket on a T-bar handle, available from any plumbing supplier in Hobart for under twenty dollars."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I exercise the valve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Twice a year is the right cadence — once at the start of winter and once at the start of summer. A ten-second full-close-and-reopen prevents the valve seat from sticking. Take the chance to also test taps inside drop pressure when the main is closed, which confirms the valve is sealing fully."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if the valve is seized and will not turn?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Do not force it with a wrench extension — a snapped valve stem is significantly worse than a leak. Ring us and we will replace the valve as a scheduled job, not an emergency, at a daytime rate. The replacement is straightforward and is the right time to add an isolation tap inside the house too if one does not already exist."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is responsible for the meter — me or TasWater?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The meter itself is TasWater's. The shutoff valve immediately upstream of it is on the customer side in most modern installations, which means your responsibility. If you suspect the meter itself is leaking, ring the TasWater faults line first before any chargeable plumbing work begins."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I install a second shutoff inside the house?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Strongly recommended for any Hobart home built before 2000 if one is not already present. A well-placed indoor isolation tap means you can shut the water in slippers on a winter midnight rather than walking out in the rain to the front gate. The retrofit is usually under an hour of work and pays for itself the first time a tap washer fails at 11pm."
+      }
+    }
+  ]
+};
+---
+<Layout
+  title="Whole-Home Water Shutoff in Hobart — Where the Valve Is & How to Test | Hobart Gas Heater Service"
+  description="Find the mains shutoff on a typical Hobart block, why exercising the valve twice a year is good practice, what to do with a seized valve, and where TasWater's responsibility ends and yours begins."
+  canonical="https://hobartgasheaterservice.com.au/home-water-shutoff-hobart/"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <main>
+    <section class="hero">
+      <h1>Whole-home water shutoff in Hobart — where the valve is and how to test</h1>
+      <p class="lede">Two minutes of homework on a quiet Sunday afternoon can save you four hours of insurance phone calls in the middle of a winter night. This is the guide to finding, testing, and (if needed) replacing the mains water shutoff on a typical Hobart property — written for homeowners who would rather know where things are before they go wrong.</p>
+      <p>Need help with a seized valve or want one fitted? Ring <a href="tel:+61485939966">+61 485 939 966</a>.</p>
+    </section>
+
+    <section>
+      <h2>Where the valve is on a Hobart block</h2>
+      <p>The standard layout on a Hobart property — whether you are in a 1920s Battery Point cottage, a 1970s Glenorchy brick veneer, or a 2010s Kingston townhouse — is a TasWater meter in a concrete pit somewhere near the front boundary, with a shutoff valve directly upstream of it. On most blocks the pit is within a metre or two of the front fence, often partially obscured by lawn growth or a paver. The lid is usually a square concrete cap roughly two hundred millimetres across, sometimes with a metal handle, sometimes flush with the ground.</p>
+      <p>Older inner-city properties in Battery Point, Sandy Bay, West Hobart and North Hobart can be different. Subdivided lots and Federation-era homes sometimes have the meter at the side gate or down the side path, particularly where the original block has been split. If the front-boundary search fails, walk the side perimeter looking for a similar concrete cap. In rare cases — usually heritage-overlay properties — the meter is under the front verandah floor, accessed through a hatch.</p>
+      <h3>What you are looking at when the lid comes off</h3>
+      <p>Inside the pit you should see the meter dial (a glass-faced unit with a number readout), an inlet pipe coming in from the street side, and an outlet pipe heading toward the house. The shutoff is on the inlet side. On installations from the last fifteen years it is typically a quarter-turn ball valve with a coloured lever handle — yellow or red. Turn the lever ninety degrees so it sits perpendicular to the pipe and the water is off. Lever along the pipe means open; lever across the pipe means closed.</p>
+      <p>Older installations — anything more than twenty years on — may instead have a brass gate valve with a square head requiring a meter key. The key is a T-handle with a square socket, available at any Hobart plumbing supplier for under twenty dollars. It is worth keeping one in the garage, taped to the meter pit, or in the kitchen drawer near the back door. The valve turns clockwise to close; expect resistance after years untouched.</p>
+    </section>
+
+    <section>
+      <h2>The twice-a-year test</h2>
+      <p>A valve that has not been moved in five years is a valve that may not move when you need it to. The simplest preventative maintenance any Hobart homeowner can do is exercise the mains shutoff twice a year — once at the start of winter (say, the first weekend in April when the chill starts to bite), and once at the start of summer (early December). The drill takes ninety seconds.</p>
+      <h3>The drill, step by step</h3>
+      <ul>
+        <li><strong>Step one:</strong> Open a kitchen tap to confirm flowing water — this is your baseline.</li>
+        <li><strong>Step two:</strong> Walk to the meter pit, lift the lid, and turn the valve fully closed (lever across the pipe, or three full clockwise rotations on a gate valve).</li>
+        <li><strong>Step three:</strong> Watch the tap — water flow should slow within five to ten seconds and stop completely within thirty. If it does not, the valve is not sealing fully and is a candidate for replacement.</li>
+        <li><strong>Step four:</strong> Reopen the valve, close the tap, and replace the meter lid.</li>
+      </ul>
+      <p>If the valve will not move at all, do not force it with a wrench extension. A snapped valve stem at the meter is an emergency we would all rather avoid, and the fix is a TasWater coordination job rather than a same-afternoon plumbing call. Ring us instead — replacing a stuck mains valve as a scheduled daytime job is straightforward and inexpensive, and gives you the chance to add an indoor isolation tap at the same time if one is not already there.</p>
+    </section>
+
+    <section>
+      <h2>The second valve worth having — inside the house</h2>
+      <p>The mains valve at the boundary is the formal isolation point, but it is rarely the most useful one in practice. On a winter night in West Hobart with rain coming sideways off kunanyi, walking to the front fence in a dressing gown to wrestle with a stiff valve is the kind of small inconvenience that turns into a large one. Every well-set-up Hobart home should have a second isolation point inside the house, usually behind the laundry tub or under the kitchen sink, where the rising main first becomes accessible.</p>
+      <p>On homes built after about 2005 this indoor isolation is usually already present. On older homes — and most heritage cottages in Battery Point or Sandy Bay — it is missing. The retrofit is a small job, typically under an hour, and adds enormous value the first time a tap washer fails at 11pm. We fit a full-bore ball valve in line on the rising main, with a clear label, in a position the household can reach in the dark. The work is performed to AS/NZS 3500 and closed with the appropriate paperwork.</p>
+      <h2>Frequently asked questions</h2>
+      <h3>What does the TasWater meter shutoff look like?</h3>
+      <p>Most modern installations are a quarter-turn ball valve with a yellow or red lever handle, sitting in a concrete pit just before the meter dial. Older installations may have a square-headed gate valve that needs a meter key.</p>
+      <h3>How often should I exercise the valve?</h3>
+      <p>Twice a year — once at the start of winter, once at the start of summer. A ten-second full-close-and-reopen prevents the valve seat from sticking.</p>
+      <h3>What if the valve is seized?</h3>
+      <p>Do not force it. A snapped valve stem is worse than a leak. Ring us and we will replace the valve as a scheduled daytime job.</p>
+      <h3>Who is responsible for the meter — me or TasWater?</h3>
+      <p>The meter itself is TasWater's. The shutoff valve immediately upstream of it is on the customer side in most modern installations, which means your responsibility.</p>
+    </section>
+
+    <section class="cta">
+      <h2>Five minutes this weekend</h2>
+      <p>Find your valve, test it, and label the location somewhere the rest of the household will find it. If anything about the test goes wrong — the valve is missing, will not turn, or does not stop the flow — ring <a href="tel:+61485939966">+61 485 939 966</a> and we will book a daytime visit at the standard rate. Quotes to <a href="mailto:quotes@hobartgasheaterservice.com.au">quotes@hobartgasheaterservice.com.au</a>. Licensed under Tasmanian Consumer Building and Occupational Services, working to AS/NZS 3500.</p>
+    </section>
+  </main>
+</Layout>

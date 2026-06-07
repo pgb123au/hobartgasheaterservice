@@ -1,0 +1,103 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does a Class A gasfitter actually test on-site?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Class A gasfitter in Tasmania runs a pressure-drop test on the gas line per AS/NZS 5601.1, using a calibrated manometer to confirm the system holds standing pressure for the prescribed period. They will also use an electronic combustible-gas detector along all accessible joints, and a soapy-water test on suspected fittings as a visual confirmation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the Certificate of Compliance need to say?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It must identify the licensed Class A gasfitter, the address, the work performed, the standard applied (AS/NZS 5601.1), and confirm a satisfactory pressure-and-leak test. In Tasmania the certificate is lodged through Consumer Building and Occupational Services and a copy is provided to the homeowner."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use a soapy-water bottle myself before you arrive?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If the gas is already isolated at the meter and the room is well ventilated, a soapy-water mix on accessible joints will not make anything worse and may help identify the source. Never apply soapy water with the gas live and a smell still present — wait until the gasfitter has isolated and tested."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly can a gasfitter get to me in Hobart?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Suspected gas leak calls are our highest priority dispatch. From Glenorchy to Hobart CBD, Sandy Bay or Battery Point is twelve to twenty minutes in light traffic. North Hobart, West Hobart, New Town, Lindisfarne and Bellerive are similar. After-hours dispatch adds the time to wake and brief the duty tradie."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will my old gas heater pass a leak test after fifteen years?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most well-maintained Type A space heaters pass at fifteen years, but flexible connectors and brass shut-off valves are the typical failure points by year eighteen to twenty. If the unit fails the pressure test on a connector, that part can be replaced and the test re-run. If it fails on the appliance internals, that conversation is usually about replacement."
+      }
+    }
+  ]
+};
+---
+<Layout
+  title="Gas Leak Detection in Hobart — Before the Gasfitter Arrives | Hobart Gas Heater Service"
+  description="What to do (and not do) when you smell gas in a Hobart home: the four immediate safety steps, the AS/NZS 5601.1 testing process, what a sniffer test involves, and what the compliance certificate must contain."
+  canonical="https://hobartgasheaterservice.com.au/gas-leak-detection-hobart/"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <main>
+    <section class="hero">
+      <h1>Gas leak detection in Hobart — what to do before the gasfitter arrives</h1>
+      <p class="lede">A faint sulphurous smell near the heater on a cold July evening is one of the more frightening things a household can confront, and there is genuinely useful work you can do in the ten minutes before a Class A gasfitter pulls up out the front. This is the short, accurate version of what to do, what not to do, and what we will do when we arrive.</p>
+      <p>Smell gas now? Open windows, isolate at the meter if safe to do so, and ring <a href="tel:+61485939966">+61 485 939 966</a>.</p>
+    </section>
+
+    <section>
+      <h2>Four things to do, two things not to do</h2>
+      <p>The do-list is short and worth memorising. First, open windows and doors to ventilate — natural gas is lighter than air and disperses quickly through cross-flow, while LPG is heavier and pools at floor level, so opening low-level vents matters too. Second, isolate gas at the meter if the meter is outside and accessible, by turning the lever ninety degrees so it sits across the pipe rather than along it. Third, evacuate anyone not actively involved in the response — particularly children, elderly residents, and anyone with breathing conditions. Fourth, ring a licensed Class A gasfitter and remain on the line if asked.</p>
+      <p>The do-not list is just as important. Do not operate any electrical switch — that includes light switches, exhaust fans, range hoods, garage door buttons and the kitchen kettle. The spark on contact closure is the ignition source we are trying to avoid. And do not relight the pilot or restart the appliance, even if the smell appears to clear. AS/NZS 5601.1 explicitly requires a pressure-and-leak test before any reignition, and that is not work a homeowner can perform.</p>
+      <h3>The Hobart-specific bit</h3>
+      <p>Most of Hobart's reticulated network is natural gas, but a significant number of homes — particularly in the bush-fringed parts of Fern Tree, parts of Sandy Bay above the line, and many of the older Battery Point cottages that never connected — run on bottled LPG. The smell additive is the same (ethyl mercaptan), but the behaviour of the leak is different. LPG sinks to the lowest point in the room, which means a subfloor void or a stair landing can hold a dangerous concentration long after the upstairs windows have cleared.</p>
+    </section>
+
+    <section>
+      <h2>What we do when we arrive</h2>
+      <p>A Class A gasfitter dispatch arrives with a manometer for the pressure-drop test, an electronic combustible-gas detector (the "sniffer"), a soapy-water bottle for visual confirmation on suspect joints, and the tools to isolate any individual appliance from the main run. The order of operations is straightforward and worth understanding so you know why we do what we do in the order we do it.</p>
+      <p>The first move is to verify the meter isolation is fully closed and to fit the manometer at the meter test point. We apply a measured test pressure to the line — typically the standing service pressure or a defined test pressure per the standard — and watch for a pressure drop over the prescribed period. A perfectly tight system holds; any drop is quantified and tells us how much gas is escaping per unit of time. From that figure we know roughly how aggressive the search needs to be.</p>
+      <h3>Sniffer plus soapy water</h3>
+      <p>With the line still under test pressure we walk the run with the combustible-gas detector, paying attention to the joints, the appliance shut-off valves, the flexible connector behind the heater, and any chase where the pipe disappears into a wall. The sniffer is sensitive enough to pick up parts-per-million concentrations; once it indicates, soapy water on the same fitting confirms with a visible bubble. That two-step is the standard because each test has different failure modes — the sniffer can be triggered by background contamination, and soapy water alone can miss a fast-evaporating leak. Together they give us a confirmed source.</p>
+      <p>Repair from that point depends on what we find. A failed flexible connector behind a fifteen-year-old space heater is a thirty-minute swap. A leak inside an appliance — say, a fractured aluminium burner manifold on a wall-mounted convector — is a different conversation, often pointing toward end-of-life on a unit that is already past its design horizon for a Hobart winter duty cycle.</p>
+    </section>
+
+    <section>
+      <h2>The compliance certificate — read it before you sign</h2>
+      <p>Every gas job in Tasmania must close with a Certificate of Compliance lodged through Consumer Building and Occupational Services. It must identify the Class A gasfitter, the licence number, the address, the scope of work, the standard applied, and confirm a satisfactory pressure-and-leak test. Keep the certificate — it is asked for at conveyancing, and your insurer may want to see it after any incident. We provide both a paper copy on the day and an emailed PDF for your records.</p>
+      <h2>Frequently asked questions</h2>
+      <h3>What does a Class A gasfitter actually test on-site?</h3>
+      <p>A pressure-drop test on the gas line per AS/NZS 5601.1, using a calibrated manometer to confirm the system holds standing pressure for the prescribed period, supplemented by an electronic combustible-gas detector along all accessible joints and a soapy-water visual confirmation.</p>
+      <h3>Can I use a soapy-water bottle myself before you arrive?</h3>
+      <p>If the gas is already isolated at the meter and the room is well ventilated, a soapy-water mix on accessible joints will not make anything worse and may help identify the source. Never apply soapy water with the gas live and a smell still present.</p>
+      <h3>How quickly can a gasfitter get to me in Hobart?</h3>
+      <p>Twelve to twenty minutes to most Hobart suburbs from our Glenorchy base in light traffic. After-hours dispatch adds the time to wake and brief the duty tradie, typically another ten minutes.</p>
+      <h3>Will my old gas heater pass a leak test after fifteen years?</h3>
+      <p>Most well-maintained Type A space heaters pass at fifteen years, but flexible connectors and brass shut-off valves are the typical failure points by year eighteen to twenty.</p>
+    </section>
+
+    <section class="cta">
+      <h2>If in doubt, ventilate and ring</h2>
+      <p>You will never owe us anything for a phone consult about a suspected gas smell. Ring <a href="tel:+61485939966">+61 485 939 966</a> and we will help you decide whether it is a dispatch tonight or a daytime visit tomorrow. Quotes to <a href="mailto:quotes@hobartgasheaterservice.com.au">quotes@hobartgasheaterservice.com.au</a>. Master Plumbers Tasmania member; Class A gasfitter licensed under Tasmanian Consumer Building and Occupational Services.</p>
+    </section>
+  </main>
+</Layout>
